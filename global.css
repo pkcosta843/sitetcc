@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    padding-top: 2rem;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 12%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 40px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+.titulo{
+    color: #fff;
+    font-size: 45px;
+}
+.imagem-pequena {
+    width: 200px;
+}
+.place-card{
+    margin: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.637);
+    max-width: 15rem;
+    gap: 1rem;
+}
+.place-card-list{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.place-card-sobre{
+    margin: 15px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.548);
+    gap: 1rem;
+}
+.place-card-list-sobre{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+@media (max-width: 800px){
+    .place-card-sobre{
+        margin: 0px;
+    }
+    .place-card{
+        margin: 0px;
+    }
+
+}
+
+
+
+
+
+
+/*EXPLICAÇÃO DOS CODIGO
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');: Importa uma fonte chamada "Roboto" do Google Fonts para ser usada no documento.
+
+*: Seletor para todos os elementos do documento. 
+margin: 0px; define a margem como zero pixels. 
+padding: 0px; define o preenchimento como zero pixels. 
+font-family: 'Roboto', sans-serif; define a fonte como "Roboto" ou, caso não esteja disponível, uma fonte genérica do tipo sans-serif.
+
+.container: Classe usada para um elemento HTML que atua como um contêiner principal. 
+padding-top: 2rem; define o preenchimento superior como 2 unidades de espaço. 
+min-height: 100vh; define a altura mínima como 100% da altura da janela de visualização. 
+background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/background.jpg); define uma imagem de fundo como um gradiente linear e uma imagem localizada no caminho "assets/background.jpg". 
+background-position: center; define a posição da imagem de fundo como centralizada. 
+background-size: cover; define o tamanho da imagem de fundo para cobrir completamente o contêiner. 
+padding-left: 10%; define o preenchimento esquerdo como 10% da largura do contêiner. 
+padding-right: 8%; define o preenchimento direito como 8% da largura do contêiner. 
+box-sizing: border-box; indica que o tamanho total do contêiner inclui o preenchimento e a borda. 
+color: aliceblue; define a cor do texto como azul-claro.
+
+.navbar: Classe usada para um elemento de barra de navegação. 
+height: 12%; define a altura da barra de navegação como 12% do elemento pai. 
+display: flex; faz com que os elementos dentro dessa classe sejam exibidos como uma flexbox. 
+align-items: center; alinha verticalmente os elementos ao centro.
+
+.logo: Classe usada para estilizar um elemento de logotipo. 
+width: 40px; define a largura do logotipo como 40 pixels. 
+cursor: pointer; altera o cursor para uma mão quando passa sobre o logotipo.
+
+.menu-icon: Classe usada para estilizar um ícone de menu. 
+width: 40px; define a largura do ícone de menu como 40 pixels. 
+cursor: pointer; altera o cursor para uma mão quando passa sobre o ícone de menu. 
+margin-left: 20px; define uma margem esquerda de 20 pixels.
+
+nav: Seletor para estilizar elementos <nav>. 
+flex: 1; faz com que o elemento de navegação ocupe todo o espaço disponível na barra de navegação. 
+text-align: right; alinha o conteúdo do elemento de navegação à direita.
+
+nav ul li: Seletor para estilizar os itens de lista dentro do elemento de navegação. 
+list-style: none; remove os marcadores de lista. 
+display: inline-block; faz com que os itens de lista sejam exibidos em linha. 
+margin-left: 60px; define uma margem esquerda de 60 pixels entre os itens de lista.
+
+nav ul li a: Seletor para estilizar os links dentro dos itens de lista de navegação. 
+text-decoration: none; remove a decoração de texto sublinhado. 
+color: #fff; define a cor do texto como branco. 
+font-size: 13px; define o tamanho da fonte como 13 pixels.
+
+.titulo: Classe usada para estilizar um elemento de título. 
+color: #fff; define a cor do texto como branco. 
+font-size: 45px; define o tamanho da fonte como 45 pixels.
+
+.imagem-pequena: Classe usada para estilizar uma imagem pequena. 
+width: 200px; define a largura da imagem como 200 pixels.
+
+.place-card: Classe usada para estilizar um cartão de lugar. 
+margin: 10px 40px; define uma margem externa de 10 pixels na parte superior e inferior, e 40 pixels nas laterais. 
+display: flex; faz com que os elementos dentro do cartão sejam exibidos como uma flexbox. 
+flex-direction: column; define a direção flexível como coluna. 
+align-items: center; alinha verticalmente os elementos ao centro. 
+justify-content: center; alinha horizontalmente os elementos ao centro. 
+padding: 1rem; define o preenchimento interno como 1 unidade de espaço. 
+border-radius: 10px; define o raio dos cantos do cartão como 10 pixels. 
+background-color: rgba(0, 0, 0, 0.637); define a cor de fundo do cartão como um tom de preto com transparência. 
+max-width: 15rem; define a largura máxima do cartão como 15 unidades de espaço. 
+gap: 1rem; define o espaçamento entre os elementos internos como 1 unidade de espaço.
+
+.place-card-list: Classe usada para um contêiner de lista de cartões de lugares. 
+display: flex; faz com que os cartões de lugar sejam exibidos em linha. 
+gap: 1rem; define o espaçamento entre os cartões como 1 unidade de espaço. 
+margin-top: 2rem; define a margem superior como 2 unidades de espaço. 
+flex-wrap: wrap; permite que os cartões de lugar sejam envoltos para a próxima linha quando não houver espaço suficiente.
+
+.footer: Classe usada para um rodapé. 
+display: flex; faz com que os elementos dentro do rodapé sejam exibidos como uma flexbox. 
+justify-content: center; alinha horizontalmente os elementos ao centro. 
+align-items: center; alinha verticalmente os elementos ao centro.
+
+.place-card-sobre: Classe usada para estilizar um cartão de lugar no contexto "sobre". 
+margin: 15px 150px; define uma margem externa de 15 pixels na parte superior e inferior, e 150 pixels nas laterais. 
+display: flex; faz com que os elementos dentro do cartão sejam exibidos como uma flexbox. 
+flex-direction: column; define a direção flexível como coluna. 
+align-items: center; alinha verticalmente os elementos ao centro. 
+justify-content: center; alinha horizontalmente os elementos ao centro. 
+padding: 3rem; define o preenchimento interno como 3 unidades de espaço. 
+border-radius: 25px; define o raio dos cantos do cartão como 25 pixels. 
+background-color: rgba(0, 0, 0, 0.548); define a cor de fundo do cartão como um tom de preto com transparência. 
+gap: 1rem; define o espaçamento entre os elementos internos como 1 unidade de espaço.
+
+.place-card-list-sobre: Classe usada para um contêiner de lista de cartões de lugares no contexto "sobre". 
+display: flex; faz com que os cartões de lugar sejam exibidos em linha. 
+gap: 1rem; define o espaçamento entre os cartões como 1 unidade de espaço. 
+margin-top: 2rem; define a margem superior como 2 unidades de espaço. 
+flex-wrap: wrap; permite que os cartões de lugar sejam envoltos para a próxima linha quando não houver espaço suficiente.
+
+@media (max-width: 800px): Essa regra aplica estilos adicionais quando a largura da janela de visualização é menor ou igual a 800 pixels. 
+.place-card-sobre { margin: 0px; } redefine a margem do cartão de lugar no contexto "sobre" como zero para se adaptar a dispositivos de tela estreita. 
+.place-card { margin: 0px; } redefine a margem do cartão de lugar como zero para se adaptar a dispositivos de tela estreita.*/

@@ -1,0 +1,112 @@
+.row {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 80%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 80px;
+}
+
+p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p {
+    text-shadow: 0 0 15px #000;
+    font-size: 11.5px;
+    /* text-align: justify; */
+}
+
+h2 {
+    color: #fff;
+    font-size: 60px;
+}
+
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+
+
+/*EXPLICAÇÃO DOS CODIGO
+
+.row: Esta é uma classe que provavelmente é aplicada a um elemento HTML para criar uma linha em um layout de grade. 
+A propriedade display: flex faz com que os elementos dentro dessa classe sejam exibidos como uma flexbox, 
+permitindo o uso de recursos de layout flexíveis.
+
+margin-top: 2rem;: Define a margem superior de .row como 2 unidades de espaço em relação ao seu elemento pai.
+
+align-items: center;: Alinha verticalmente os elementos dentro de .row ao centro.
+
+.col: Essa classe é usada para definir colunas em um layout de grade. 
+flex-basis: 80%; define a largura inicial de cada coluna como 80% da largura do elemento pai.
+
+h1: Seletor para estilizar elementos <h1>. 
+color: #fff; define a cor do texto como branco. 
+font-size: 80px; define o tamanho da fonte como 80 pixels.
+
+p: Seletor para estilizar elementos <p>. 
+color: #fff; define a cor do texto como branco. 
+font-size: 15px; define o tamanho da fonte como 15 pixels. 
+line-height: 15px; define a altura da linha como 15 pixels.
+
+.card: Essa classe é usada para estilizar elementos de cartão. 
+width: 200px; define a largura do cartão como 200 pixels. 
+height: 230px; define a altura do cartão como 230 pixels. 
+display: inline-block; faz com que os cartões sejam exibidos em linha. 
+border-radius: 10px; define o raio dos cantos do cartão como 10 pixels. 
+padding: 15px 25px; define o preenchimento interno do cartão como 15 pixels na parte superior e inferior, e 25 pixels nas laterais. 
+box-sizing: border-box; indica que o tamanho total do cartão inclui o preenchimento e a borda, em vez de ser acrescentado a ele. 
+cursor: pointer; altera o cursor para uma mão quando passa sobre o cartão. 
+margin: 10px 15px; define a margem externa do cartão como 10 pixels na parte superior e inferior, e 15 pixels nas laterais. 
+transition: 0.5s; define uma transição de 0,5 segundos para suavizar as alterações de estilo quando ocorre um evento, como o hover.
+
+.card:hover: Essa regra se aplica quando o mouse está sobre o cartão. 
+transform: translateY(-10px); aplica uma transformação para mover o cartão 10 pixels para cima ao passar o mouse sobre ele.
+
+h5: Seletor para estilizar elementos <h5>. 
+color: #fff; define a cor do texto como branco. 
+text-shadow: 0 0 5px #999; aplica uma sombra de texto com deslocamento zero no eixo x e y, e um raio de 5 pixels com uma cor cinza claro (#999).
+
+.card p: Seletor para estilizar elementos <p> dentro de um cartão. 
+text-shadow: 0 0 15px #000; aplica uma sombra de texto com deslocamento zero no eixo x e y, e um raio de 15 pixels com uma cor preta (#000). 
+font-size: 11.5px; define o tamanho da fonte como 11,5 pixels.
+
+h2: Seletor para estilizar elementos <h2>. 
+color: #fff; define a cor do texto como branco. 
+font-size: 60px; define o tamanho da fonte como 60 pixels.
+
+@media (max-width: 800px): Essa regra aplica estilos adicionais quando a largura da janela de visualização é menor ou igual a 800 pixels. 
+.row { flex-direction: column; } redefine a direção flexível das linhas para serem exibidas em colunas em vez de linhas, o que pode ser útil em um layout responsivo.*/
